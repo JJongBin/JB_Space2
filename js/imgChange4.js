@@ -42,14 +42,16 @@ function nextFunc(j) {
   posList[j] = (posList[j] + 1) % idxList[j] // 장면 선택
   console.log(target.querySelector("ul").children[j])
   console.log("123")
-  target.querySelector("ul").children[j].style.marginLeft = `${-posList[j] * 100}%`
+  target.querySelector("ul").style.marginLeft = `${-posList[j] * 100}%`
   return posList
 };
 
 function prevFunc(j) {
   if(posList[j] != 0){
+    console.log(target.querySelector("ul").children[j])
+    console.log("Z")
     posList[j] = (posList[j] - 1) % idxList[j] // 장면 선택
-    target.querySelector("ul").children[j].style.marginLeft = `${-posList[j] * 100}%`
+    target.querySelector("ul").style.marginLeft = `${-posList[j] * 100}%`
     return posList
   };
 };
@@ -57,8 +59,6 @@ function prevFunc(j) {
 var nextImg = document.querySelectorAll(".next");
 var prevImg = document.querySelectorAll(".prev");
 
-console.log("1231231")
-console.log(nextImg)
 
 // for(var j = 0; j < nextImg.length; j++ ){
 //   nextImg[j].addEventListener('click', nextFunc(j));

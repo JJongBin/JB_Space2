@@ -9,9 +9,9 @@ class ObItem{
   };
   
   setImg(){
-    // .slide ul의 너비 조정
+    // ul의 너비 조정
     this.targetUl.style.cssText = `width:calc(100% * ${this.len});display:flex;transition:1s`;
-    // .slide li의 너비 조정
+    // li의 너비 조정
     Array.from(this.targetUl.children)
     .forEach(ele => ele.style.cssText = `width:calc(100% / ${this.len});`);
   };
