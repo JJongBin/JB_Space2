@@ -66,6 +66,27 @@ a{
     cursor: pointer;
     z-index: 1;
 }
+.btn{
+    width: 130px;
+    padding: 10px;
+    border: 2px solid #c8c8c8;
+    border-radius: 4px;
+    color: #606060;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: block;
+    transition: .4s;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #c1c1c1;
+}
+
+
+
 
 
 
@@ -172,9 +193,23 @@ header .main-menu .menu li a:hover{
 .intro {
     /* background-color: #d5d5d5; */
     margin-top: 120px;
+    position: relative;
 }
+.intro::before{
+    content: "";
+    background-image: url('../img/cover_pattern.png');
+    background-size: auto;
+    opacity: 0.8;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
 .intro .inner{
     padding: 100px 0;
+    /* opacity: 1; */
 }
 .intro .inner .code{
     height: 600px;
@@ -459,7 +494,7 @@ header .main-menu .menu li a:hover{
     
 }
 .portfolio .inner{
-    height: 1200px;
+    height: 1500px;
     border-bottom: 1px solid #ddd;
 }
 .portfolio .inner .head > h1{
@@ -472,7 +507,7 @@ header .main-menu .menu li a:hover{
 .portfolio .inner .contents{
     display: grid; 
     /* grid-template-rows: 420px 420px;     */
-    grid-template-rows: 470px;    
+    grid-template-rows: 520px;    
     grid-template-columns: 1fr 1fr; 
     /* margin-bottom: 100px; */
     margin-bottom: 70px;
@@ -484,7 +519,7 @@ header .main-menu .menu li a:hover{
     border: 1px solid #ebebeb;
     box-shadow: 0 0 20px rgb(0 0 0 / 10%);  
     border-radius: 10px;
-    height: 400px;
+    height: 450px;
 }
 .portfolio .inner .contents .item .img_target{
     margin: 10px 0;
@@ -541,6 +576,12 @@ header .main-menu .menu li a:hover{
 .portfolio .inner .contents .item .img_mg .next:hover{
     color: #000;
 }
+.portfolio .item .btn-place{
+    display: flex;
+    justify-content: center;
+}
+
+
 
 /* CERTIFICATE */
 .certificate{
