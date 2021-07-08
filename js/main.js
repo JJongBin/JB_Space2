@@ -1,3 +1,4 @@
+console.log("원종빈의 포트폴리오입니다.")
 // ########################################
 // vs code 타이핑
 
@@ -49,19 +50,28 @@ function typing(){
 // introduce 애니메이션
 // https://blog.naver.com/sungyuna89/222180198536
 
-var intro = document.querySelector(".whoami .inner"),
-docElem = document.documentElement,
-offset, // 기준(여기까지 오면 띄움)
+const intro = document.querySelector(".whoami .inner .head"),
+docElem = document.documentElement
+let offset, // 기준(여기까지 오면 띄움)
 scrollPos,  //진행한 스크롤양
 docHeight; //전체높이
-var introLogo = document.querySelector(".introduce .logo");
-var introText = document.querySelector(".introduce .text");
+const introLogo = document.querySelector(".introduce1 .logo");
+const introText = document.querySelector(".introduce1 .text");
+const introSkills = document.querySelector(".introduce2 .skills");
+const introSkillsChild = introSkills.children;
+
+// console.log(introSkills.children)
+// console.log(introSkills.children.length)
 // 높이 계산하기
 docHeight = Math.max(docElem.offsetHeight, docElem.scrollHeight);
 
 scrollPos = docElem.scrollTop;
 
-offset = 60;
+// window.addEventListener('scroll', _.throttle(function() {
+//   console.log(scrollPos)
+// },1000));
+
+offset = 240;
 
 var goTop = document.querySelector(".go_top");
 window.addEventListener('scroll', function() {
@@ -82,16 +92,38 @@ window.addEventListener('scroll', function() {
     setTimeout(function() {
       introLogo.classList.remove('invisible');
       introLogo.classList.add('intro_ani');
+      introText.classList.remove('invisible');
+      introText.classList.add('intro_ani');
 
       setTimeout(function() {
-        introText.classList.remove('invisible');
-        introText.classList.add('intro_ani');
-        }, 400);
+        introSkills.classList.remove('invisible')
+        introSkills.classList.add('intro_ani')
 
-      }, 300);
-      
-    }
-  });
+        for(let i = 0; i<introSkillsChild.length; i++){
+          let fill = introSkillsChild[i].querySelector('.fill')
+          let fill_percent = fill.querySelector('p')
+          // console.log(fill_percent)
+          // console.log(fill_name)
+          setTimeout(function() {
+            fill_name = fill.className
+            if(fill_name.includes('50')){
+              fill.classList.add('percent50_ani');
+            }else if(fill_name.includes('60')){
+              fill.classList.add('percent60_ani');
+            }else if(fill_name.includes('70')){
+              fill.classList.add('percent70_ani');
+            }else if(fill_name.includes('80')){
+              fill.classList.add('percent80_ani');
+            }
+          }, 500*(i+1));
+          setTimeout(function() {
+            fill_percent.classList.remove('invisible')
+          }, 500*(i+1)+400);
+        };
+      }, 400);
+    }, 300);
+  }
+});
   
 
 // #############################
@@ -101,7 +133,7 @@ var portHead = document.querySelector(".portfolio .inner .head"),
 offset2; 
 var portContents = document.querySelector(".portfolio .inner .contents");
 
-offset2 = 760;
+offset2 = 1000;
 
 window.addEventListener('scroll', function() {
   scrollPos = docElem.scrollTop;
@@ -125,7 +157,7 @@ var cerHead = document.querySelector(".certificate .inner .head"),
 offset2; 
 var cerContents = document.querySelector(".certificate .inner .contents");
 
-offset3 = 1400;
+offset3 = 2500;
 
 window.addEventListener('scroll', function() {
   scrollPos = docElem.scrollTop;
