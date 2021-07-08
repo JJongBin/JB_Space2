@@ -144,6 +144,9 @@ a{
     color: #fff;
     background-color: #c1c1c1;
 }
+.modal-open{
+    overflow: hidden;
+}
 
 
 
@@ -541,7 +544,7 @@ header .main-menu .menu li a:hover{
     /* box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%); */
 }
 .whoami .inner .head{
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 500;
     text-align: center;
     padding: 50px 0 80px 0;
@@ -657,15 +660,16 @@ header .main-menu .menu li a:hover{
     
 }
 .portfolio .inner{
-    height: 1500px;
-    border-bottom: 1px solid #ddd;
+    height: 1400px;
+    /* border-bottom: 1px solid #ddd; */
 }
 .portfolio .inner .head > h1{
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 500;
     text-align: center;
-    padding: 70px 0 50px 0;
+    padding: 70px 0 40px 0;
     color: #656565;
+    border-bottom: 2px solid #ddd;
     
 }
 .portfolio .inner .contents{
@@ -674,7 +678,7 @@ header .main-menu .menu li a:hover{
     grid-template-rows: 520px;    
     grid-template-columns: 1fr 1fr; 
     /* margin-bottom: 100px; */
-    margin-bottom: 70px;
+    margin:30px 0 70px 0;
 }
 
 .portfolio .inner .contents .item{
@@ -684,6 +688,7 @@ header .main-menu .menu li a:hover{
     box-shadow: 0 0 20px rgb(0 0 0 / 10%);  
     border-radius: 10px;
     height: 450px;
+    position: relative;
 }
 .portfolio .inner .contents .item .img_target{
     margin: 10px 0;
@@ -743,31 +748,38 @@ header .main-menu .menu li a:hover{
 .portfolio .item .btn-place{
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -80px;
+    margin-bottom: 20px;
+}
+.portfolio .item .btn-place .btn{
+    width: 160px;
 }
 
 
 
 /* CERTIFICATE */
 .certificate{
-    
+    background-color: rgb(255, 255, 255);
 }
 .certificate .inner{
-    height: 700px;
+    height: 800px;
 }
 .certificate .inner .head > h1{
     font-size: 50px;
     font-weight: 500;
     text-align: center;
-    padding: 70px 0 50px 0;
+    padding: 70px 0 40px 0;
     color: #656565;
+    border-bottom: 2px solid #ddd;
 }
 .certificate .inner .contents{
     display: grid; 
-    /* grid-template-rows: 420px 420px;     */
     grid-template-rows: 350px;    
     grid-template-columns: 1fr 1fr 1fr; 
-    /* margin-bottom: 100px; */
-    margin-bottom: 70px;
+    margin: 30px 0 70px 0;
 }
 
 .certificate .inner .contents .item_c{
@@ -775,7 +787,7 @@ header .main-menu .menu li a:hover{
     margin: 20px;
     border: 1px solid #ebebeb;
     box-shadow: 0 0 20px rgb(0 0 0 / 10%);  
-    height: 380px;
+    height: 400px;
     align-items: center;
 }
 .certificate .inner .contents .item_c h4{
@@ -786,7 +798,7 @@ header .main-menu .menu li a:hover{
     border-bottom: 1px solid #ddd;
 }
 .certificate .inner .contents .item_c .manager_c{
-    height: 30px;
+    height: 20px;
     text-align: center;
     line-height: middle;
     padding-top: 10px;
@@ -830,7 +842,7 @@ header .main-menu .menu li a:hover{
     
 }
 .about .inner .add_info .info_l .logo{
-    margin-right: 80px;
+    margin-right: 60px;
 }
 .about .inner .add_info .info_l .send_me{
     text-align: center;
@@ -871,3 +883,42 @@ header .main-menu .menu li a:hover{
     align-items: center;
     /* border: 1px solid #606060; */
 }
+
+
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .modal_bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal .modal_box {
+    position: absolute;
+    background-color: #fff;
+    width: 50%;
+    height: 60%;
+    padding: 15px;
+    overflow: auto;
+    text-align: center;
+    margin-bottom: -10%;
+    
+}
+.modal .modal_box h4{
+    font-size: 40px;
+    display: block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    
+}
+    

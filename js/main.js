@@ -204,3 +204,40 @@ $("#go_certificate").click(function() {
   $('html, body').animate({ scrollTop:$("#certificate_move").offset().top-120}, 500);
 });
 
+
+
+// MODAL
+const open1 = () => {
+  document.querySelector(".modal1").classList.remove("invisible");
+  document.querySelector('body').classList.add('modal-open');
+}
+const close1 = () => {
+  document.querySelector(".modal1").classList.add("invisible");
+  document.querySelector('body').classList.remove('modal-open');
+}
+
+const open2 = () => {
+  document.querySelector(".modal2").classList.remove("invisible");
+  document.querySelector('body').classList.add('modal-open');
+}
+const close2 = () => {
+  document.querySelector(".modal2").classList.add("invisible");
+  document.querySelector('body').classList.remove('modal-open');
+}
+
+const open3 = () => {
+  document.querySelector(".modal3").classList.remove("invisible");
+  document.querySelector('body').classList.add('modal-open');
+}
+const close3 = () => {
+  document.querySelector(".modal3").classList.add("invisible");
+  document.querySelector('body').classList.remove('modal-open');
+}
+
+document.querySelector(".certificate .inner .contents .m1").addEventListener("click", open1);
+document.querySelector(".certificate .inner .contents .m2").addEventListener("click", open2);
+document.querySelector(".certificate .inner .contents .m3").addEventListener("click", open3);
+// document.querySelector(".closeBtn").addEventListener("click", close);
+document.querySelector(".modal_bg1").addEventListener("click", close1);
+document.querySelector(".modal_bg2").addEventListener("click", close2);
+document.querySelector(".modal_bg3").addEventListener("click", close3);
