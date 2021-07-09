@@ -10,6 +10,7 @@ a{
 }
 .inner{
     width: 1100px;
+    /* width: 70%; */
     margin: 0 auto;
     position: relative;
 }
@@ -663,7 +664,7 @@ header .main-menu .menu li a:hover{
     height: 1400px;
     /* border-bottom: 1px solid #ddd; */
 }
-.portfolio .inner .head > h1{
+.portfolio .inner .head{
     font-size: 55px;
     font-weight: 500;
     text-align: center;
@@ -767,8 +768,8 @@ header .main-menu .menu li a:hover{
 .certificate .inner{
     height: 800px;
 }
-.certificate .inner .head > h1{
-    font-size: 50px;
+.certificate .inner .head{
+    font-size: 55px;
     font-weight: 500;
     text-align: center;
     padding: 70px 0 40px 0;

@@ -71,6 +71,11 @@ scrollPos = docElem.scrollTop;
 //   console.log(scrollPos)
 // },1000));
 
+
+
+// const targetWho = document.getElementById("whoami_move");
+// const targetWhoTop = targetWho.getBoundingClientRect();
+// offset = targetWhoTop.top + scrollPos - window.innerHeight;
 offset = 240;
 
 var goTop = document.querySelector(".go_top");
@@ -179,7 +184,11 @@ var portHead = document.querySelector(".portfolio .inner .head"),
 offset2; 
 var portContents = document.querySelector(".portfolio .inner .contents");
 
-offset2 = 1000;
+
+let targetPortfolio = document.getElementById("portfolio_move");
+let targetTopPortfolio = targetPortfolio.getBoundingClientRect();
+offset2 = targetTopPortfolio.top + scrollPos - window.innerHeight + 200;
+// offset2 = 1000;
 
 window.addEventListener('scroll', function() {
   scrollPos = docElem.scrollTop;
@@ -209,7 +218,11 @@ var cerHead = document.querySelector(".certificate .inner .head"),
 offset2; 
 var cerContents = document.querySelector(".certificate .inner .contents");
 
-offset3 = 2500;
+
+let targetCertificate = document.getElementById("certificate_move");
+let targetTopCertificate = targetCertificate.getBoundingClientRect();
+offset3 = targetTopCertificate.top + scrollPos - window.innerHeight + 200;
+// offset3 = 2500;
 
 window.addEventListener('scroll', function() {
   scrollPos = docElem.scrollTop;
