@@ -76,15 +76,11 @@ offset = 240;
 var goTop = document.querySelector(".go_top");
 window.addEventListener('scroll', function() {
   scrollPos = docElem.scrollTop;
-  if (scrollPos < offset){
-    goTop.classList.remove('intro_ani');
-    goTop.classList.add('none_ani');
-    setTimeout(function() {
-      goTop.classList.add('invisible');
-      }, 700);
-  }
+  
   if (scrollPos > offset) {
     intro.classList.add('intro_ani');
+    intro.classList.remove('invisible');
+
 
     goTop.classList.add("intro_ani");
     goTop.classList.remove('invisible');
@@ -104,8 +100,21 @@ window.addEventListener('scroll', function() {
           let fill_percent = fill.querySelector('p')
           // console.log(fill_percent)
           // console.log(fill_name)
-          setTimeout(function() {
+          if (intro.className.includes('invisible') == true){
+            continue
+          }
+          const percentFill = setTimeout(function() {
             fill_name = fill.className
+            // //이거 왜 안되냐??//이거 왜 안되냐??//이거 왜 안되냐??//이거 왜 안되냐??//이거 왜 안되냐??
+            // //이거 왜 안되냐??//이거 왜 안되냐??//이거 왜 안되냐??//이거 왜 안되냐??
+            // //이거 왜 안되냐??//이거 왜 안되냐??//이거 왜 안되냐??
+            // if (intro.className.includes('invisible') == true){
+            //   clearTimeout(percentFill)
+            //   console.log('stop!!!')
+            // } //이거 왜 안되냐??
+            // //이거 왜 안되냐??//이거 왜 안되냐??//이거 왜 안되냐??//이거 왜 안되냐??
+            // //이거 왜 안되냐??//이거 왜 안되냐??//이거 왜 안되냐??//이거 왜 안되냐??//이거 왜 안되냐??
+            // //이거 왜 안되냐??//이거 왜 안되냐??//이거 왜 안되냐??//이거 왜 안되냐??
             if(fill_name.includes('50')){
               fill.classList.add('percent50_ani');
             }else if(fill_name.includes('60')){
@@ -115,14 +124,51 @@ window.addEventListener('scroll', function() {
             }else if(fill_name.includes('80')){
               fill.classList.add('percent80_ani');
             }
-          }, 500*(i+1));
+          }, 400*(i+1));
           setTimeout(function() {
             fill_percent.classList.remove('invisible')
-          }, 500*(i+1)+400);
+          }, 400*(i+1)+300);
         };
       }, 400);
     }, 300);
   }
+  // if (scrollPos < offset){  // 애니매이션 초기화
+  else if(scrollPos < offset-200){
+    goTop.classList.remove('intro_ani');
+    goTop.classList.add('none_ani');
+    setTimeout(function() {
+      goTop.classList.add('invisible');
+    }, 700);
+
+    intro.classList.add('invisible');
+    intro.classList.remove('intro_ani');
+    introLogo.classList.add('invisible');
+    introLogo.classList.remove('intro_ani');
+    introText.classList.add('invisible');
+    introText.classList.remove('intro_ani');
+
+    introSkills.classList.add('invisible')
+    introSkills.classList.remove('intro_ani')
+
+    for(let i = 0; i<introSkillsChild.length; i++){
+      let fill = introSkillsChild[i].querySelector('.fill')
+      let fill_percent = fill.querySelector('p')
+      // console.log(fill_percent)
+      // console.log(fill_name)
+      
+      fill_name = fill.className
+      if(fill_name.includes('50')){
+        fill.classList.remove('percent50_ani');
+      }else if(fill_name.includes('60')){
+        fill.classList.remove('percent60_ani');
+      }else if(fill_name.includes('70')){
+        fill.classList.remove('percent70_ani');
+      }else if(fill_name.includes('80')){
+        fill.classList.remove('percent80_ani');
+      }
+      fill_percent.classList.add('invisible');
+    };
+  };
 });
   
 
@@ -144,10 +190,16 @@ window.addEventListener('scroll', function() {
     setTimeout(function() {
       portContents.classList.remove('invisible');
       portContents.classList.add('intro_ani2');
-      }, 300);
-      
-    }
-  });
+    }, 300);
+    
+  }
+  else if(scrollPos < offset2-200){
+    portHead.classList.add('invisible');
+    portHead.classList.remove('intro_ani');
+    portContents.classList.add('invisible');
+    portContents.classList.remove('intro_ani2');
+  }
+});
 
 
 // #############################
@@ -170,29 +222,35 @@ window.addEventListener('scroll', function() {
       cerContents.classList.add('intro_ani2');
     }, 300);
   }
+  else if(scrollPos < offset3-200){
+    cerHead.classList.add('invisible');
+    cerHead.classList.remove('intro_ani');
+    cerContents.classList.add('invisible');
+    cerContents.classList.remove('intro_ani2');
+  }
 });
 
 $("#go_top").click(function() {
   $('html, body').animate({ scrollTop:$(docElem).offset().top}, 300);
-  setTimeout(function() {
-    scrollPos = docElem.scrollTop;
-    if (scrollPos < 50){
-      intro.classList.add('invisible');
-      intro.classList.remove('intro_ani');
-      introLogo.classList.add('invisible');
-      introLogo.classList.remove('intro_ani');
-      introText.classList.add('invisible');
-      introText.classList.remove('intro_ani');
-      portHead.classList.add('invisible');
-      portHead.classList.remove('intro_ani');
-      portContents.classList.add('invisible');
-      portContents.classList.remove('intro_ani2');
-      cerHead.classList.add('invisible');
-      cerHead.classList.remove('intro_ani');
-      cerContents.classList.add('invisible');
-      cerContents.classList.remove('intro_ani2');
-    };
-  }, 500);
+  // setTimeout(function() {
+  //   scrollPos = docElem.scrollTop;
+  //   if (scrollPos < 50){
+  //     intro.classList.add('invisible');
+  //     intro.classList.remove('intro_ani');
+  //     introLogo.classList.add('invisible');
+  //     introLogo.classList.remove('intro_ani');
+  //     introText.classList.add('invisible');
+  //     introText.classList.remove('intro_ani');
+  //     portHead.classList.add('invisible');
+  //     portHead.classList.remove('intro_ani');
+  //     portContents.classList.add('invisible');
+  //     portContents.classList.remove('intro_ani2');
+  //     cerHead.classList.add('invisible');
+  //     cerHead.classList.remove('intro_ani');
+  //     cerContents.classList.add('invisible');
+  //     cerContents.classList.remove('intro_ani2');
+  //   };
+  // }, 500);
 });
 $("#go_whoami").click(function() {
   $('html, body').animate({ scrollTop:$("#whoami_move").offset().top-120}, 500);
