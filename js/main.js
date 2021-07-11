@@ -1,6 +1,9 @@
 console.log("원종빈의 포트폴리오입니다.")
 // ########################################
 // vs code 타이핑
+// if (matchMedia("screen and (min-width: 1024px)").matches) {
+  
+// }
 
 var typingBool = false; 
 var typingIdx=0; 
@@ -67,16 +70,16 @@ docHeight = Math.max(docElem.offsetHeight, docElem.scrollHeight);
 
 scrollPos = docElem.scrollTop;
 
-// window.addEventListener('scroll', _.throttle(function() {
-//   console.log(scrollPos)
-// },1000));
+window.addEventListener('scroll', _.throttle(function() {
+  console.log(scrollPos)
+},1000));
 
 
 
-// const targetWho = document.getElementById("whoami_move");
-// const targetWhoTop = targetWho.getBoundingClientRect();
-// offset = targetWhoTop.top + scrollPos - window.innerHeight;
-offset = 240;
+const targetWho = document.getElementById("whoami_move");
+const targetWhoTop = targetWho.getBoundingClientRect();
+offset = targetWhoTop.top + scrollPos - window.innerHeight;
+// offset = 240;
 
 var goTop = document.querySelector(".go_top");
 window.addEventListener('scroll', function() {
