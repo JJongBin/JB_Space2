@@ -983,16 +983,19 @@ header .main-menu .menu li a:hover{
 .modal .modal_box {
     position: absolute;
     background-color: #fff;
-    width: 50%;
+    width: 80%;
     height: 60%;
-    padding: 15px;
+    padding: 10px;
     overflow: auto;
     text-align: center;
     margin-bottom: -10%;
-    
+}
+.modal .modal_box img{
+    width: 100%;
 }
 .modal .modal_box h4{
-    font-size: 40px;
+    font-size: 15px;
+    padding: 5px;
     display: block;
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
