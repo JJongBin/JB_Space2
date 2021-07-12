@@ -255,8 +255,6 @@ header .main-menu .menu li a:hover{
 
 /* INTRO */
 .intro {
-    /* background-color: #d5d5d5; */
-    /* padding-top: 120px; */
     position: relative;
     height: calc(100vh - 120px);
     margin-top: 120px;
