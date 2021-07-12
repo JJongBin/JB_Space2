@@ -1,3 +1,4 @@
+// location.reload()
 console.log("원종빈의 포트폴리오입니다.")
 // ########################################
 // vs code 타이핑
@@ -70,9 +71,9 @@ docHeight = Math.max(docElem.offsetHeight, docElem.scrollHeight);
 
 scrollPos = docElem.scrollTop;
 
-window.addEventListener('scroll', _.throttle(function() {
-  console.log(scrollPos)
-},1000));
+// window.addEventListener('scroll', _.throttle(function() {
+//   console.log(scrollPos)
+// },1000));
 
 
 
@@ -183,9 +184,9 @@ window.addEventListener('scroll', function() {
 // #############################
 // portfolio
 
-var portHead = document.querySelector(".portfolio .inner .head"),
+var portHead = document.querySelector(".portfolio .head"),
 offset2; 
-var portContents = document.querySelector(".portfolio .inner .contents");
+var portContents = document.querySelector(".portfolio .contents");
 
 
 let targetPortfolio = document.getElementById("portfolio_move");
@@ -217,9 +218,9 @@ window.addEventListener('scroll', function() {
 // #############################
 // certificate
 
-var cerHead = document.querySelector(".certificate .inner .head"),
+var cerHead = document.querySelector(".certificate  .head"),
 offset2; 
-var cerContents = document.querySelector(".certificate .inner .contents");
+var cerContents = document.querySelector(".certificate .contents");
 
 
 let targetCertificate = document.getElementById("certificate_move");
@@ -290,14 +291,14 @@ const close1 = () => {
   document.querySelector('body').classList.remove('modal-open');
 }
 
-const open2 = () => {
-  document.querySelector(".modal2").classList.remove("invisible");
-  document.querySelector('body').classList.add('modal-open');
-}
-const close2 = () => {
-  document.querySelector(".modal2").classList.add("invisible");
-  document.querySelector('body').classList.remove('modal-open');
-}
+// const open2 = () => {
+//   document.querySelector(".modal2").classList.remove("invisible");
+//   document.querySelector('body').classList.add('modal-open');
+// }
+// const close2 = () => {
+//   document.querySelector(".modal2").classList.add("invisible");
+//   document.querySelector('body').classList.remove('modal-open');
+// }
 
 const open3 = () => {
   document.querySelector(".modal3").classList.remove("invisible");
@@ -308,10 +309,10 @@ const close3 = () => {
   document.querySelector('body').classList.remove('modal-open');
 }
 
-document.querySelector(".certificate .inner .contents .m1").addEventListener("click", open1);
-document.querySelector(".certificate .inner .contents .m2").addEventListener("click", open2);
-document.querySelector(".certificate .inner .contents .m3").addEventListener("click", open3);
+document.querySelector(".certificate .contents .m1").addEventListener("click", open1);
+// document.querySelector(".certificate .contents .m2").addEventListener("click", open2);
+document.querySelector(".certificate .contents .m3").addEventListener("click", open3);
 // document.querySelector(".closeBtn").addEventListener("click", close);
 document.querySelector(".modal_bg1").addEventListener("click", close1);
-document.querySelector(".modal_bg2").addEventListener("click", close2);
+// document.querySelector(".modal_bg2").addEventListener("click", close2);
 document.querySelector(".modal_bg3").addEventListener("click", close3);

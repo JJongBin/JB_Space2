@@ -9,7 +9,7 @@ a{
     text-decoration: none;
 }
 .inner{
-    width: 460px;
+    width: 300px;
     /* width: 70%; */
     margin: 0 auto;
     position: relative;
@@ -143,7 +143,6 @@ a{
     font-size: 10px;
     font-weight: 500;
     text-align: center;
-    justify-content: center;
     cursor: pointer;
     box-sizing: border-box;
     display: block;
@@ -174,11 +173,11 @@ header{
 }
 header .inner{
     /* background-color: orange; */
-    height: 80px;
+    height: 50px;
 }
 header .logo{
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -190,19 +189,19 @@ header .logo{
 header .logo > img{
     display: block;
     margin: auto;
-    width: 50px;
+    width: 30px;
 }
 header .logo > p{
     color: #656565;
-    padding-top: 10px;
-    font-size: 10px;
+    padding-top: 5px;
+    font-size: 7px;
     display: none;
 }
     
 header .sub-menu{
     /* display: flex; */
     position: absolute;
-    top: 20px;
+    top: 10px;
     right: 0;
     margin: auto;
 }
@@ -218,7 +217,7 @@ header .sub-menu .item li a{
 }
 header .sub-menu .item li img{
     opacity: 0.6;
-    width: 15px;
+    width: 10px;
 }
 header .sub-menu .item li img:hover{
     opacity: 0.9;
@@ -235,7 +234,7 @@ header .main-menu{
 }
 header .main-menu .menu{
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 header .main-menu .menu li{
     position: relative;
@@ -244,7 +243,7 @@ header .main-menu .menu li::before{
     /* 메뉴 사이의 구분선 */
     content:"";
     width: 1px;
-    height: 15px;
+    height: 10px;
     background-color:#c8c8c8;
     position: absolute;
     top: 0;
@@ -255,7 +254,7 @@ header .main-menu .menu li:first-child::before{
     display: none;
 }
 header .main-menu .menu li a{
-    font-size: 15px;
+    font-size: 10px;
     padding: 0 5px;
     display: block;
     color: #656565;
@@ -270,8 +269,7 @@ header .main-menu .menu li a:hover{
     /* background-color: #d5d5d5; */
     /* padding-top: 120px; */
     position: relative;
-    height: 510px;
-    width: 100%;
+    height: 460px;
 }
 .intro::before{
     content: "";
@@ -286,7 +284,7 @@ header .main-menu .menu li a:hover{
 }
 
 .intro .inner{
-    padding: 150px 0 60px 0;
+    padding: 100px 0 60px 0;
     margin: 0 auto;
     /* opacity: 1; */
 }
@@ -301,7 +299,7 @@ header .main-menu .menu li a:hover{
 
 .intro .inner .code .left_bar{
     position: absolute;
-    width: 25px;
+    width: 20px;
     top: 0;
     bottom: 10px;
     left: 0;
@@ -313,7 +311,7 @@ header .main-menu .menu li a:hover{
     margin-top: 20px;
 }
 .intro .inner .code .left_bar .icon_top .material-icons{
-    font-size: 10px;
+    font-size: 9px;
 }
 .intro .inner .code .left_bar .icon_top li{
     text-align: center;
@@ -335,15 +333,15 @@ header .main-menu .menu li a:hover{
     position: absolute;
     top: 0;
     bottom: 10px;
-    left: 25px;
-    width: 65px;
+    left: 20px;
+    width: 50px;
     background-color: rgb(45, 45, 45);
     color: #fff;
     /* -webkit-transform: scale(0.5); */
 }
 .intro .inner .code .left_fbar .contents{
     margin-top: 10px;
-    -webkit-transform: scale(0.7);
+    -webkit-transform: scale(0.6);
 }
 .intro .inner .code .left_fbar .contents li{
     width: 100%;
@@ -359,7 +357,7 @@ header .main-menu .menu li a:hover{
 .intro .inner .code .left_fbar .files {
     border-top: 1px solid #656565;
     margin-top: -10px;
-    -webkit-transform: scale(0.7);
+    -webkit-transform: scale(0.6);
 }
 .intro .inner .code .left_fbar .files li{
     font-size: 10px;
@@ -374,15 +372,15 @@ header .main-menu .menu li a:hover{
 .intro .inner .code .top_file_bar{
     position: absolute;
     top: 10px;
-    left:90px;
-    width: 370px;
+    left:70px;
+    width: 230px;
     height: 15px;
     background-color: rgb(45, 45, 45);
 }
 .intro .inner .code .top_file_bar .files{
     position: relative;
-    -webkit-transform: scale(0.7);
-    margin-left: -55px;
+    -webkit-transform: scale(0.6);
+    margin-left: -58px;
 }
 .intro .inner .code .top_file_bar .files li{
     width: 80px;
@@ -415,7 +413,7 @@ header .main-menu .menu li a:hover{
     left: 0;
     top: 0;
     height: 10px;
-    width: 460px;
+    width: 300px;
     /* background-color: #cbcbcb; */
     background-color: rgb(60, 60, 60);
     display: flex;
@@ -444,17 +442,17 @@ header .main-menu .menu li a:hover{
 }
 .intro .inner .code .top_bar > p{
     font-size: 10px;
-    -webkit-transform: scale(0.7);
+    -webkit-transform: scale(0.6);
     color: #c6c6c6;
     margin: auto;
     
 }
 .intro .inner .code .console_bar{
     position: absolute;
-    width: 370px;
-    height: 71px;
+    width: 230px;
+    height: 85px;
     bottom: 10px;
-    left: 90px;
+    left: 70px;
     background-color: rgb(38, 38, 38);
     /* background-color: #888888; */
     border-top: 1px solid #656565;
@@ -462,7 +460,7 @@ header .main-menu .menu li a:hover{
 }
 .intro .inner .code .console_bar .console_deco{
     display: flex;
-    -webkit-transform: scale(0.7);
+    -webkit-transform: scale(0.6);
     margin-left: -50px;
 }
 .intro .inner .code .console_bar .console_deco li{
@@ -474,7 +472,8 @@ header .main-menu .menu li a:hover{
     margin: 5px 0 0 10px;
     font-size: 10px;
     color: #fff;
-    -webkit-transform: scale(0.7);
+    -webkit-transform: scale(0.6);
+    margin-left: -50px;
     margin-left: -50px;
 }
 .intro .inner .code .console_bar .console_deco li:last-child{
@@ -493,7 +492,7 @@ header .main-menu .menu li a:hover{
     position: absolute;
     bottom: 0;
     height: 10px;
-    width: 460px;
+    width: 300px;
     background-color: rgb(0, 113, 200);
     border-radius: 0 0 5px 5px ;
     color: #fff;
@@ -530,14 +529,14 @@ header .main-menu .menu li a:hover{
     margin-bottom: -2px;
 }
 .intro .inner .code .bottom_bar .state_right li .material-icons{
-    font-size: 9px;
+    font-size: 6px;
 }
 .intro .inner .code .main_code{
     position: absolute;
     top: 25px;
-    bottom: 160px;
-    left: 90px;
-    width: 370px;
+    bottom: 174px;
+    left: 70px;
+    width: 230px;
     height: 180px;
     background-color: rgb(38, 38, 38);
     color: #fff;
@@ -551,7 +550,7 @@ header .main-menu .menu li a:hover{
 }
 .intro .inner .code .main_code .in_code ul{
     list-style:none;
-    font-size: 15px;
+    font-size: 10px;
 }
 .intro .inner .code .main_code .in_code .typing ul li{
   display:block;
@@ -575,7 +574,7 @@ header .main-menu .menu li a:hover{
 .whoami{
     /* margin-bottom: 70px; */
     /* height: 630px; */
-    height: 740px;
+    height: 510px;
     width: 100%;
     /* background-color: rgb(245, 245, 245); */
     /* background-color: rgba(255, 255, 255, 0.1); */
@@ -591,7 +590,7 @@ header .main-menu .menu li a:hover{
 
 }
 .whoami .inner{
-    /* padding: 0 0 70px 0; */
+    padding: 0 0 70px 0;
     /* background-color: rgb(245, 245, 245); */
     /* padding-bottom: 70px; */
     /* border-top: 1px solid #ddd;
@@ -599,16 +598,16 @@ header .main-menu .menu li a:hover{
     /* box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%); */
 }
 .whoami .inner .head{
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 00;
     text-align: center;
-    padding: 40px 0 40px 0;
+    padding: 30px 0 30px 0;
     color: #000;
 }
 .whoami .inner .introduce{
     position: relative;
     /* display: flex; */
-    height: 600px;
+    height: 800px;
     /* margin-right: 10px; */
 }
 /* .whoami .inner .introduce:last-child{
@@ -620,6 +619,7 @@ header .main-menu .menu li a:hover{
     top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     padding: 0 10px;
     box-sizing: border-box;
 }
@@ -630,12 +630,12 @@ header .main-menu .menu li a:hover{
 }
 .whoami .inner .introduce1 .text > h1{
     padding: 15px 0 20px 0;
-    font-size: 25px;
+    font-size: 15px;
     color: #000;
 }
 .whoami .inner .introduce1 .text > p{
     padding: 10px 0px;
-    font-size: 15px;
+    font-size: 10px;
     word-break: keep-all;
     /* text-align: left; */
     line-height: 1.5;
@@ -644,16 +644,17 @@ header .main-menu .menu li a:hover{
 .whoami .inner .introduce2{
     text-align: center;
     position: absolute;
-    top: 350px;
+    top: 250px;
     right: 0;
     width: 100%;
+    height: 100%;
     padding: 0 10px;
     box-sizing: border-box;
 }
 .whoami .inner .introduce2 .skills{
 }
 .whoami .inner .introduce2 .skills .skill{
-    height: 50px;
+    height: 30px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -667,7 +668,7 @@ header .main-menu .menu li a:hover{
     position: absolute;
     z-index: 9;
     left: 4%;
-    height: 35px;
+    height: 25px;
     /* object-fit: cover; */
 }
 .whoami .inner .introduce2 .skills .skill .percent{
@@ -704,51 +705,50 @@ header .main-menu .menu li a:hover{
 .whoami .inner .introduce2 .skills .skill .percent .fill p{
     color: black;
     opacity: 1;
-    font-size: 18px;
+    font-size: 10px;
     padding-right: 15px;
 }
 
 /* PORTFOLIO */
-.portfolio {
-    width: 100%;
-    height: 800px;
-    padding: 0 20px 0 20px;
-    box-sizing: border-box;
+.portfolio{
+    
+}
+.portfolio .inner{
+    height: 1400px;
     /* border-bottom: 1px solid #ddd; */
 }
-.portfolio .head{
-    font-size: 35px;
+.portfolio .inner .head{
+    font-size: 25px;
     font-weight: 500;
     text-align: center;
-    padding: 50px 0 40px 0;
+    padding: 40px 0 30px 0;
     color: #656565;
     border-bottom: 2px solid #ddd;
     
 }
-.portfolio .contents{
-    display: grid; 
-    height: 600px;
-    grid-template-rows: 50% 50%;    
-    /* grid-template-rows: 300px;     */
-    grid-template-columns: 1fr 1fr; 
+.portfolio .inner .contents{
+    /* display: grid;  */
+    height: 1060px;
+    /* grid-template-rows: 420px 420px;     */
+    /* grid-template-rows: 300px;    
+    grid-template-columns: 1fr;  */
     /* margin-bottom: 100px; */
-    margin: 30px 0 30px 0;
+    margin: 20px 0 20px 0;
 }
 
-.portfolio .contents .item{
+.portfolio .inner .contents .item{
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ebebeb;
     box-shadow: 0 0 20px rgb(0 0 0 / 10%);  
     border-radius: 10px;
+    /* height: 450px; */
+    width: 300px;
     height: 280px;
-    width: 95%;
-    margin: auto;
-    /* height: 280px; */
     position: relative;
     box-sizing: border-box;
 }
-.portfolio .contents .item .img_target{
+.portfolio .inner .contents .item .img_target{
     /* margin: 10px 0; */
     align-items: center;
     border: 0.5px solid #f2f2f2;
@@ -756,59 +756,59 @@ header .main-menu .menu li a:hover{
     /* border-radius: 10px; */
     border-radius: 5px;
 }
-/* .portfolio .contents .item .img_target:first-child{
+/* .portfolio .inner .contents .item .img_target:first-child{
     display: block;
 } */
-.portfolio .contents .item > h4{
-    font-size: 20px;
+.portfolio .inner .contents .item > h4{
+    font-size: 15px;
     text-align: center;
     padding: 10px 0;
     color: #656565;
     border-bottom: 1px solid #ddd;
 }
-.portfolio .contents .item .description{
+.portfolio .inner .contents .item .description{
     padding: 10px;
 }
-.portfolio .contents .item .description > p{
+.portfolio .inner .contents .item .description > p{
     margin: 10px 0;
 }
-.portfolio .contents .item .use_tech{
+.portfolio .inner .contents .item .use_tech{
     height: 10px;
     text-align: center;
     line-height: middle;
     padding-top: 10px;
     padding-bottom: 5px;
 }
-.portfolio .contents .item .img_mg{
+.portfolio .inner .contents .item .img_mg{
     display: flex;
 }
-.portfolio .contents .item .img_mg .img_list{
+.portfolio .inner .contents .item .img_mg .img_list{
     width: 238px;
     height: 100px;
     /* display: flex; */
     overflow: hidden;
 }
-.portfolio .contents .item .img_mg .img_list img{
+.portfolio .inner .contents .item .img_mg .img_list img{
     width: 237px;
     height: 100px;
 }
-.portfolio .contents .item .img_mg .material-icons{
+.portfolio .inner .contents .item .img_mg .material-icons{
     font-size: 20px;
 }
-.portfolio .contents .item .img_mg .prev{
+.portfolio .inner .contents .item .img_mg .prev{
     margin: auto;
     color: #b1b1b1;
     cursor: pointer;
 }
-.portfolio .contents .item .img_mg .prev:hover{
+.portfolio .inner .contents .item .img_mg .prev:hover{
     color: #000;
 }
-.portfolio .contents .item .img_mg .next{
+.portfolio .inner .contents .item .img_mg .next{
     margin: auto;
     color: #b1b1b1;
     cursor: pointer;
 }
-.portfolio .contents .item .img_mg .next:hover{
+.portfolio .inner .contents .item .img_mg .next:hover{
     color: #000;
 }
 .portfolio .item .btn-place{
@@ -828,29 +828,28 @@ header .main-menu .menu li a:hover{
 
 /* CERTIFICATE */
 .certificate{
-    width: 100%;
     background-color: rgb(255, 255, 255);
-    height: 700px;
-    padding: 0 20px 0 20px;
-    box-sizing: border-box;
 }
-.certificate .head{
-    font-size: 35px;
+.certificate .inner{
+    height: 1400px;
+}
+.certificate .inner .head{
+    font-size: 25px;
     font-weight: 500;
     text-align: center;
-    padding: 40px 0 40px 0;
+    padding: 40px 0 30px 0;
     color: #656565;
     border-bottom: 2px solid #ddd;
 }
-.certificate .contents{
-    display: grid; 
-    height: 400px;
-    grid-template-rows: 50%;    
-    grid-template-columns: 1fr 1fr; 
-    margin: 30px 0 30px 0;
+.certificate .inner .contents{
+    /* display: grid;  */
+    height: 1300px;
+    /* grid-template-rows: 300px;    
+    grid-template-columns: 1fr;  */
+    margin: 20px 0 20px 0;
 }
 
-.certificate .contents .item_c{
+.certificate .inner .contents .item_c{
     padding: 10px;
     margin: 10px;
     border: 1px solid #ebebeb;
@@ -860,21 +859,21 @@ header .main-menu .menu li a:hover{
     box-sizing: border-box;
     border-radius: 5px;
 }
-.certificate .contents .item_c h4{
+.certificate .inner .contents .item_c h4{
     font-size: 20px;
     text-align: center;
     padding: 10px 0;
     color: #656565;
     border-bottom: 1px solid #ddd;
 }
-.certificate .contents .item_c .manager_c{
+.certificate .inner .contents .item_c .manager_c{
     height: 20px;
     text-align: center;
     line-height: middle;
     padding-top: 10px;
     font-size: 10px;
 }
-.certificate .contents .item_c .img_c{
+.certificate .inner .contents .item_c .img_c{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -883,12 +882,12 @@ header .main-menu .menu li a:hover{
 
 
 .about{
-    height: 130px;
+    height: 100px;
     background-color: #eeeeee;
     position: relative;
 }
 .about .inner{
-    height: 110px;
+    height: 90px;
     padding: 10px 0 0 0;
     box-sizing: border-box;
     
@@ -912,23 +911,23 @@ header .main-menu .menu li a:hover{
     
 }
 .about .inner .add_info .info_l .logo{
-    margin-right: 15px;
+    margin-right: 10px;
 }
 .about .inner .add_info .info_l .logo img{
-    width: 70px;
+    width: 40px;
 
 }
 .about .inner .add_info .info_l .send_me{
     text-align: center;
 }
 .about .inner .add_info .info_l .send_me p{
-    font-size: 13px;
+    font-size: 10px;
     line-height: 1.4;
     -webkit-transform: scale(0.8);
 
 }
 .about .inner .add_info .info_l .send_me p:first-child{
-    font-size: 15px;
+    font-size: 11px;
 }
 .about .inner .add_info .info_l .send_me .btn_place{
     display: flex;
@@ -936,10 +935,12 @@ header .main-menu .menu li a:hover{
     margin-top: 10px;
 }
 .about .inner .add_info .info_l .send_me .btn_place .btn{
-    width: 120px;
+    height: 20px;
+    width: 100px;
+    -webkit-transform: scale(0.6);
 }
 .about .inner .add_info .info_r{
-    padding: 20px 0 10px 0;
+    padding: 10px 0 10px 0;
     position: absolute;
     right: 0;
     width: 30%;
@@ -947,7 +948,7 @@ header .main-menu .menu li a:hover{
 }
 .about .inner .add_info .info_r li{
     font-size: 10px;
-    /* -webkit-transform: scale(0.6); */
+    -webkit-transform: scale(0.6);
 }
 .about .inner .add_info .info_r li:first-child{
     font-size: 13px;
@@ -986,7 +987,7 @@ header .main-menu .menu li a:hover{
     position: absolute;
     background-color: #fff;
     width: 80%;
-    height: 70%;
+    height: 60%;
     padding: 10px;
     overflow: auto;
     text-align: center;
@@ -996,7 +997,7 @@ header .main-menu .menu li a:hover{
     width: 100%;
 }
 .modal .modal_box h4{
-    font-size: 25px;
+    font-size: 15px;
     padding: 5px;
     display: block;
     margin-bottom: 20px;

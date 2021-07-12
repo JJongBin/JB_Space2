@@ -1,7 +1,7 @@
 /* COMMON */
 body{
     color: #7e7e7e;
-    font-size: 6px;
+    font-size: 10px;
     font-weight: 400;
     line-height: 1;
 }
@@ -270,6 +270,7 @@ header .main-menu .menu li a:hover{
     /* padding-top: 120px; */
     position: relative;
     height: 460px;
+    width: 100%;
 }
 .intro::before{
     content: "";
@@ -524,9 +525,12 @@ header .main-menu .menu li a:hover{
 }
 .intro .inner .code .bottom_bar .state_right li{
     font-size: 10px;
-    -webkit-transform: scale(0.3);
+    -webkit-transform: scale(0.6);
     /* margin-right: 5px; */
-    margin-bottom: -5px;
+    margin-bottom: -2px;
+}
+.intro .inner .code .bottom_bar .state_right li .material-icons{
+    font-size: 6px;
 }
 .intro .inner .code .main_code{
     position: absolute;
@@ -570,7 +574,6 @@ header .main-menu .menu li a:hover{
 /* whoami */
 .whoami{
     /* margin-bottom: 70px; */
-    /* height: 630px; */
     height: 510px;
     width: 100%;
     /* background-color: rgb(245, 245, 245); */
@@ -707,14 +710,14 @@ header .main-menu .menu li a:hover{
 }
 
 /* PORTFOLIO */
-.portfolio{
-    
+
+.portfolio {
+    width: 100%;
+    height: 1330px;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
-.portfolio .inner{
-    height: 1400px;
-    /* border-bottom: 1px solid #ddd; */
-}
-.portfolio .inner .head{
+.portfolio .head{
     font-size: 25px;
     font-weight: 500;
     text-align: center;
@@ -723,9 +726,9 @@ header .main-menu .menu li a:hover{
     border-bottom: 2px solid #ddd;
     
 }
-.portfolio .inner .contents{
+.portfolio .contents{
     /* display: grid;  */
-    height: 1060px;
+    height: 1160px;
     /* grid-template-rows: 420px 420px;     */
     /* grid-template-rows: 300px;    
     grid-template-columns: 1fr;  */
@@ -733,19 +736,19 @@ header .main-menu .menu li a:hover{
     margin: 20px 0 20px 0;
 }
 
-.portfolio .inner .contents .item{
+.portfolio .contents .item{
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ebebeb;
     box-shadow: 0 0 20px rgb(0 0 0 / 10%);  
     border-radius: 10px;
     /* height: 450px; */
-    width: 300px;
+    width: 100%;
     height: 280px;
     position: relative;
     box-sizing: border-box;
 }
-.portfolio .inner .contents .item .img_target{
+.portfolio .contents .item .img_target{
     /* margin: 10px 0; */
     align-items: center;
     border: 0.5px solid #f2f2f2;
@@ -753,59 +756,59 @@ header .main-menu .menu li a:hover{
     /* border-radius: 10px; */
     border-radius: 5px;
 }
-/* .portfolio .inner .contents .item .img_target:first-child{
+/* .portfolio .contents .item .img_target:first-child{
     display: block;
 } */
-.portfolio .inner .contents .item > h4{
+.portfolio .contents .item > h4{
     font-size: 15px;
     text-align: center;
     padding: 10px 0;
     color: #656565;
     border-bottom: 1px solid #ddd;
 }
-.portfolio .inner .contents .item .description{
+.portfolio .contents .item .description{
     padding: 10px;
 }
-.portfolio .inner .contents .item .description > p{
+.portfolio .contents .item .description > p{
     margin: 10px 0;
 }
-.portfolio .inner .contents .item .use_tech{
+.portfolio .contents .item .use_tech{
     height: 10px;
     text-align: center;
     line-height: middle;
     padding-top: 10px;
     padding-bottom: 5px;
 }
-.portfolio .inner .contents .item .img_mg{
+.portfolio .contents .item .img_mg{
     display: flex;
 }
-.portfolio .inner .contents .item .img_mg .img_list{
+.portfolio .contents .item .img_mg .img_list{
     width: 238px;
     height: 100px;
     /* display: flex; */
     overflow: hidden;
 }
-.portfolio .inner .contents .item .img_mg .img_list img{
+.portfolio .contents .item .img_mg .img_list img{
     width: 237px;
     height: 100px;
 }
-.portfolio .inner .contents .item .img_mg .material-icons{
+.portfolio .contents .item .img_mg .material-icons{
     font-size: 20px;
 }
-.portfolio .inner .contents .item .img_mg .prev{
+.portfolio .contents .item .img_mg .prev{
     margin: auto;
     color: #b1b1b1;
     cursor: pointer;
 }
-.portfolio .inner .contents .item .img_mg .prev:hover{
+.portfolio .contents .item .img_mg .prev:hover{
     color: #000;
 }
-.portfolio .inner .contents .item .img_mg .next{
+.portfolio .contents .item .img_mg .next{
     margin: auto;
     color: #b1b1b1;
     cursor: pointer;
 }
-.portfolio .inner .contents .item .img_mg .next:hover{
+.portfolio .contents .item .img_mg .next:hover{
     color: #000;
 }
 .portfolio .item .btn-place{
@@ -826,11 +829,11 @@ header .main-menu .menu li a:hover{
 /* CERTIFICATE */
 .certificate{
     background-color: rgb(255, 255, 255);
+    height: 1050px;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
-.certificate .inner{
-    height: 1400px;
-}
-.certificate .inner .head{
+.certificate .head{
     font-size: 25px;
     font-weight: 500;
     text-align: center;
@@ -838,15 +841,15 @@ header .main-menu .menu li a:hover{
     color: #656565;
     border-bottom: 2px solid #ddd;
 }
-.certificate .inner .contents{
+.certificate .contents{
     /* display: grid;  */
-    height: 1300px;
+    height: 900px;
     /* grid-template-rows: 300px;    
     grid-template-columns: 1fr;  */
     margin: 20px 0 20px 0;
 }
 
-.certificate .inner .contents .item_c{
+.certificate .contents .item_c{
     padding: 10px;
     margin: 10px;
     border: 1px solid #ebebeb;
@@ -856,21 +859,21 @@ header .main-menu .menu li a:hover{
     box-sizing: border-box;
     border-radius: 5px;
 }
-.certificate .inner .contents .item_c h4{
+.certificate .contents .item_c h4{
     font-size: 20px;
     text-align: center;
     padding: 10px 0;
     color: #656565;
     border-bottom: 1px solid #ddd;
 }
-.certificate .inner .contents .item_c .manager_c{
+.certificate .contents .item_c .manager_c{
     height: 20px;
     text-align: center;
     line-height: middle;
     padding-top: 10px;
     font-size: 10px;
 }
-.certificate .inner .contents .item_c .img_c{
+.certificate .contents .item_c .img_c{
     display: flex;
     justify-content: center;
     align-items: center;

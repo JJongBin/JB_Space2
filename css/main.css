@@ -258,11 +258,12 @@ header .main-menu .menu li a:hover{
     /* background-color: #d5d5d5; */
     /* padding-top: 120px; */
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 120px);
+    margin-top: 120px;
 }
 .intro::before{
     content: "";
-    background-image: url('../img/cover_pattern.png');
+    /* background-image: url('../img/cover_pattern.png'); */
     background-size: auto;
     opacity: 0.8;
     position: absolute;
@@ -273,7 +274,11 @@ header .main-menu .menu li a:hover{
 }
 
 .intro .inner{
-    padding: 200px 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -500px;
+    margin-top: -300px;
     /* opacity: 1; */
 }
 .intro .inner .code{
@@ -385,7 +390,7 @@ header .main-menu .menu li a:hover{
     /* background-color: #cbcbcb; */
     background-color: rgb(60, 60, 60);
     display: flex;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
 }
 .intro .inner .code .top_bar .circle_red{
     width: 10px;
@@ -657,14 +662,13 @@ header .main-menu .menu li a:hover{
 }
 
 /* PORTFOLIO */
-.portfolio{
-    
-}
-.portfolio .inner{
+.portfolio {
     height: 1400px;
+    padding: 0 50px;
+    box-sizing: border-box;
     /* border-bottom: 1px solid #ddd; */
 }
-.portfolio .inner .head{
+.portfolio  .head{
     font-size: 55px;
     font-weight: 500;
     text-align: center;
@@ -673,80 +677,80 @@ header .main-menu .menu li a:hover{
     border-bottom: 2px solid #ddd;
     
 }
-.portfolio .inner .contents{
+.portfolio  .contents{
     display: grid; 
     height: 1060px;
     /* grid-template-rows: 420px 420px;     */
-    grid-template-rows: 500px;    
+    /* grid-template-rows: 50%;     */
     grid-template-columns: 1fr 1fr; 
     /* margin-bottom: 100px; */
-    margin:30px 0 30px 0;
+    margin: 30px 0 30px 0;
 }
 
-.portfolio .inner .contents .item{
+.portfolio  .contents .item{
     padding: 10px;
     margin: 20px;
     border: 1px solid #ebebeb;
     box-shadow: 0 0 20px rgb(0 0 0 / 10%);  
     border-radius: 10px;
     /* height: 450px; */
-    width: 460px;
+    /* width: 460px; */
     position: relative;
     box-sizing: border-box;
 }
-.portfolio .inner .contents .item .img_target{
+.portfolio  .contents .item .img_target{
     margin: 10px 0;
     align-items: center;
     border: 0.5px solid #f2f2f2;
     box-shadow: 0 0 10px rgb(0 0 0 / 10%);  
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border-radius: 5px;
 }
-/* .portfolio .inner .contents .item .img_target:first-child{
+/* .portfolio  .contents .item .img_target:first-child{
     display: block;
 } */
-.portfolio .inner .contents .item > h4{
+.portfolio  .contents .item > h4{
     font-size: 30px;
     text-align: center;
     padding: 10px 0;
     color: #656565;
     border-bottom: 1px solid #ddd;
 }
-.portfolio .inner .contents .item .description{
+.portfolio  .contents .item .description{
     padding: 10px;
 }
-.portfolio .inner .contents .item .description > p{
+.portfolio  .contents .item .description > p{
     margin: 15px 0;
 }
-.portfolio .inner .contents .item .use_tech{
+.portfolio  .contents .item .use_tech{
     height: 30px;
     text-align: center;
     line-height: middle;
     padding-top: 10px;
 }
-.portfolio .inner .contents .item .img_mg{
+.portfolio  .contents .item .img_mg{
     display: flex;
 }
-.portfolio .inner .contents .item .img_mg .img_list{
+.portfolio  .contents .item .img_mg .img_list{
     width: 380px;
     height: 170px;
     display: flex;
     overflow: hidden;
 }
-.portfolio .inner .contents .item .img_mg .prev{
+.portfolio  .contents .item .img_mg .prev{
     margin: auto;
     color: #b1b1b1;
     cursor: pointer;
 }
-.portfolio .inner .contents .item .img_mg .prev:hover{
+.portfolio  .contents .item .img_mg .prev:hover{
     color: #000;
 }
-.portfolio .inner .contents .item .img_mg .next{
+.portfolio  .contents .item .img_mg .next{
     margin: auto;
     color: #b1b1b1;
     cursor: pointer;
 }
-.portfolio .inner .contents .item .img_mg .next:hover{
+.portfolio  .contents .item .img_mg .next:hover{
     color: #000;
 }
 .portfolio .item .btn-place{
@@ -767,11 +771,13 @@ header .main-menu .menu li a:hover{
 /* CERTIFICATE */
 .certificate{
     background-color: rgb(255, 255, 255);
+    padding: 0 50px ;
+    box-sizing: border-box;
 }
-.certificate .inner{
+.certificate {
     height: 800px;
 }
-.certificate .inner .head{
+.certificate  .head{
     font-size: 55px;
     font-weight: 500;
     text-align: center;
@@ -779,14 +785,14 @@ header .main-menu .menu li a:hover{
     color: #656565;
     border-bottom: 2px solid #ddd;
 }
-.certificate .inner .contents{
+.certificate  .contents{
     display: grid; 
-    grid-template-rows: 470px;    
+    grid-template-rows: 100%;    
     grid-template-columns: 1fr 1fr 1fr; 
     margin: 30px 0 30px 0;
 }
 
-.certificate .inner .contents .item_c{
+.certificate  .contents .item_c{
     padding: 10px;
     margin: 20px;
     border: 1px solid #ebebeb;
@@ -795,21 +801,21 @@ header .main-menu .menu li a:hover{
     align-items: center;
     box-sizing: border-box;
 }
-.certificate .inner .contents .item_c h4{
+.certificate  .contents .item_c h4{
     font-size: 20px;
     text-align: center;
     padding: 10px 0;
     color: #656565;
     border-bottom: 1px solid #ddd;
 }
-.certificate .inner .contents .item_c .manager_c{
+.certificate  .contents .item_c .manager_c{
     height: 20px;
     text-align: center;
     line-height: middle;
     padding-top: 10px;
     font-size: 12px;
 }
-.certificate .inner .contents .item_c .img_c{
+.certificate  .contents .item_c .img_c{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -822,7 +828,7 @@ header .main-menu .menu li a:hover{
     background-color: #eeeeee;
     position: relative;
 }
-.about .inner{
+.about .inner {
     height: 150px;
     padding: 30px 0 0 0;
     box-sizing: border-box;

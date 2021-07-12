@@ -2,7 +2,7 @@ class ObItem{
   
   constructor(idx) {
     this.idx = idx;
-    this.target = document.querySelector(".portfolio .inner .contents"); // item 부모
+    this.target = document.querySelector(".portfolio .contents"); // item 부모
     this.targetUl = this.target.children[this.idx].querySelector("ul"); // 해당 ul
     this.pos = 0;
     this.len = this.targetUl.children.length;
@@ -39,7 +39,7 @@ function findIdx(nextImgs, nextImg){
 };
 
 let obList = new Array();
-const targetContent = document.querySelector(".portfolio .inner .contents");
+const targetContent = document.querySelector(".portfolio .contents");
 const numItem = targetContent.children.length;
 
 // item 수만큼 객체 생성
