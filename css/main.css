@@ -281,7 +281,6 @@ header .main-menu .menu li a:hover{
 }
 .intro .inner .code{
     height: 600px;
-    /* background-color: #888888; */
     background-color: rgb(38, 38, 38);
     position: relative;
     box-shadow: 0 0 20px rgb(0 0 0 / 20%);
