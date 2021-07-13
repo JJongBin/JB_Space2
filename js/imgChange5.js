@@ -30,7 +30,8 @@ class ObItem{
 }
 
 function findIdx(nextImgs, nextImg){
-  for(var idxNext = 0; idxNext< nextImgs.length; idxNext++){
+  let idxNext;
+  for(idxNext = 0; idxNext< nextImgs.length; idxNext++){
     if (nextImg == nextImgs[idxNext]){
       break
     };
@@ -43,7 +44,7 @@ const targetContent = document.querySelector(".portfolio .contents");
 const numItem = targetContent.children.length;
 
 // item 수만큼 객체 생성
-for(var i=0; i<numItem; i++){
+for(let i=0; i<numItem; i++){
   if(targetContent.children[i].querySelector("ul") == null){
     continue;
   }// 방어코드
@@ -51,8 +52,8 @@ for(var i=0; i<numItem; i++){
   obList.push(content);
 }
 
-var nextImgs = document.querySelectorAll(".img_mg .next");
-var prevImgs = document.querySelectorAll(".img_mg .prev");
+const nextImgs = document.querySelectorAll(".img_mg .next");
+const prevImgs = document.querySelectorAll(".img_mg .prev");
 
 // ul, li 셋팅
 nextImgs.forEach(function(nextImg) {

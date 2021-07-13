@@ -660,7 +660,7 @@ header .main-menu .menu li a:hover{
 
 /* PORTFOLIO */
 .portfolio {
-    height: 1400px;
+    /* height: 1400px; */
     padding: 0 50px;
     box-sizing: border-box;
     /* border-bottom: 1px solid #ddd; */
@@ -676,7 +676,7 @@ header .main-menu .menu li a:hover{
 }
 .portfolio  .contents{
     display: grid; 
-    height: 1060px;
+    /* height: 1200px; */
     /* grid-template-rows: 420px 420px;     */
     /* grid-template-rows: 50%;     */
     grid-template-columns: 1fr 1fr; 
@@ -714,10 +714,10 @@ header .main-menu .menu li a:hover{
     border-bottom: 1px solid #ddd;
 }
 .portfolio  .contents .item .description{
-    padding: 10px;
+    padding: 10px 30px 80px 30px;
 }
 .portfolio  .contents .item .description > p{
-    margin: 15px 0;
+    padding: 15px 0;
 }
 .portfolio  .contents .item .use_tech{
     height: 30px;
@@ -727,12 +727,21 @@ header .main-menu .menu li a:hover{
 }
 .portfolio  .contents .item .img_mg{
     display: flex;
+    width: 100%;
 }
 .portfolio  .contents .item .img_mg .img_list{
-    width: 380px;
-    height: 170px;
-    display: flex;
+    /* width: 400px; */
+    width: 100%;
+    height: auto;
+    /* display: flex; */
     overflow: hidden;
+    box-sizing: border-box;
+}
+.portfolio  .contents .item .img_mg .img_list img{
+    /* width: 380px; */
+    width: 100%;
+    height: auto;
+    /* max-height: 400px; */
 }
 .portfolio  .contents .item .img_mg .prev{
     margin: auto;
@@ -751,13 +760,13 @@ header .main-menu .menu li a:hover{
     color: #000;
 }
 .portfolio .item .btn-place{
-    display: flex;
     justify-content: center;
+    margin-bottom: 20px;
     position: absolute;
     bottom: 0;
     left: 50%;
     margin-left: -80px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .portfolio .item .btn-place .btn{
     width: 160px;

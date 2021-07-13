@@ -713,7 +713,7 @@ header .main-menu .menu li a:hover{
 
 .portfolio {
     width: 100%;
-    height: 1330px;
+    /* height: 1330px; */
     padding: 0 10px;
     box-sizing: border-box;
 }
@@ -728,12 +728,12 @@ header .main-menu .menu li a:hover{
 }
 .portfolio .contents{
     /* display: grid;  */
-    height: 1160px;
+    /* height: 1160px; */
     /* grid-template-rows: 420px 420px;     */
     /* grid-template-rows: 300px;    
     grid-template-columns: 1fr;  */
     /* margin-bottom: 100px; */
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
 }
 
 .portfolio .contents .item{
@@ -743,8 +743,8 @@ header .main-menu .menu li a:hover{
     box-shadow: 0 0 20px rgb(0 0 0 / 10%);  
     border-radius: 10px;
     /* height: 450px; */
-    width: 100%;
-    height: 280px;
+    /* width: 100%;
+    height: 280px; */
     position: relative;
     box-sizing: border-box;
 }
@@ -767,7 +767,7 @@ header .main-menu .menu li a:hover{
     border-bottom: 1px solid #ddd;
 }
 .portfolio .contents .item .description{
-    padding: 10px;
+    padding: 10px 10px 50px 10px;
 }
 .portfolio .contents .item .description > p{
     margin: 10px 0;
@@ -781,16 +781,20 @@ header .main-menu .menu li a:hover{
 }
 .portfolio .contents .item .img_mg{
     display: flex;
+    width: 100%;
 }
 .portfolio .contents .item .img_mg .img_list{
-    width: 238px;
-    height: 100px;
-    /* display: flex; */
+    /* width: 238px;
+    height: 100px; */
+    width: 100%;
+    height: auto;
     overflow: hidden;
 }
 .portfolio .contents .item .img_mg .img_list img{
-    width: 237px;
-    height: 100px;
+    /* width: 237px;
+    height: 100px; */
+    width: 100%;
+    height: auto;
 }
 .portfolio .contents .item .img_mg .material-icons{
     font-size: 20px;
