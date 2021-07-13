@@ -6,18 +6,17 @@ console.log("원종빈의 포트폴리오입니다.")
   
 // }
 
-let typingBool = false; 
-let typingIdx = 0; 
-let liIndex = 0;
-const liLength = $(".typing-txt>ul>li").length;
+var typingBool = false; 
+var typingIdx=0; 
+var liIndex = 0;
+var liLength = $(".typing-txt>ul>li").length;
 
 // 타이핑될 텍스트를 가져온다 
-let typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
-let tyInt
+var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
 typingTxt=typingTxt.split(""); // 한글자씩 자른다. 
 if(typingBool==false){ // 타이핑이 진행되지 않았다면 
     typingBool=true; 
-    let tyInt = setInterval(typing,60); // 반복동작 
+    var tyInt = setInterval(typing,60); // 반복동작 
 } 
      
 function typing(){ 
@@ -70,23 +69,28 @@ const introSkillsChild = introSkills.children;
 // 높이 계산하기
 docHeight = Math.max(docElem.offsetHeight, docElem.scrollHeight);
 
-scrollPos = docElem.scrollTop ;
+scrollPos = docElem.scrollTop;
 
-// window.addEventListener('scroll', _.throttle(function() {
-//   console.log(scrollPos + window.innerHeight)
-// },1000));
+window.addEventListener('scroll', _.throttle(function() {
+  console.log(scrollPos)
+},1000));
 
 
 
 const targetWho = document.getElementById("whoami_move");
 const targetWhoTop = targetWho.getBoundingClientRect();
-offset = targetWhoTop.top + scrollPos + 100;;
+offset = targetWhoTop.top + scrollPos - window.innerHeight + 30;
+// offset = targetWhoTop.top + scrollPos;
+// offset = 240;
+console.log(window.innerHeight)
+console.log(targetWhoTop.top)
+console.log(offset)
 
-const goTop = document.querySelector(".go_top");
+var goTop = document.querySelector(".go_top");
 window.addEventListener('scroll', function() {
   scrollPos = docElem.scrollTop;
   
-  if (scrollPos + window.innerHeight > offset) {
+  if (scrollPos > offset) {
     intro.classList.add('intro_ani');
     intro.classList.remove('invisible');
 
@@ -105,8 +109,8 @@ window.addEventListener('scroll', function() {
         introSkills.classList.add('intro_ani')
 
         for(let i = 0; i<introSkillsChild.length; i++){
-          const fill = introSkillsChild[i].querySelector('.fill')
-          const fill_percent = fill.querySelector('p')
+          let fill = introSkillsChild[i].querySelector('.fill')
+          let fill_percent = fill.querySelector('p')
           // console.log(fill_percent)
           // console.log(fill_name)
           if (intro.className.includes('invisible') == true){
@@ -142,7 +146,7 @@ window.addEventListener('scroll', function() {
     }, 300);
   }
   // if (scrollPos < offset){  // 애니매이션 초기화
-  else if(scrollPos + window.innerHeight < offset){
+  else if(scrollPos < offset){
     goTop.classList.remove('intro_ani');
     goTop.classList.add('none_ani');
     setTimeout(function() {
@@ -160,8 +164,8 @@ window.addEventListener('scroll', function() {
     introSkills.classList.remove('intro_ani')
 
     for(let i = 0; i<introSkillsChild.length; i++){
-      const fill = introSkillsChild[i].querySelector('.fill')
-      const fill_percent = fill.querySelector('p')
+      let fill = introSkillsChild[i].querySelector('.fill')
+      let fill_percent = fill.querySelector('p')
       // console.log(fill_percent)
       // console.log(fill_name)
       
@@ -184,25 +188,21 @@ window.addEventListener('scroll', function() {
 // #############################
 // portfolio
 
-const portHead = document.querySelector(".portfolio .head");
-const portContents = document.querySelector(".portfolio .contents");
+var portHead = document.querySelector(".portfolio .head"),
+offset2; 
+var portContents = document.querySelector(".portfolio .contents");
 
 
-const targetPortfolio = document.getElementById("portfolio_move");
+let targetPortfolio = document.getElementById("portfolio_move");
 let targetTopPortfolio = targetPortfolio.getBoundingClientRect();
-// offset2 = targetTopPortfolio.top + scrollPos - window.innerHeight + 200;
-let offset2 = offset + targetWhoTop.height;
-let offset3
-
+offset2 = targetTopPortfolio.top + scrollPos - window.innerHeight + 200;
+// offset2 = 1000;
 
 window.addEventListener('scroll', function() {
   scrollPos = docElem.scrollTop;
-  if (scrollPos + window.innerHeight > offset2) {
+  if (scrollPos > offset2) {
     portHead.classList.remove('invisible');
     portHead.classList.add('intro_ani');
-
-    targetTopPortfolio = targetPortfolio.getBoundingClientRect();
-    offset3 = offset2 + targetPortfolio.offsetHeight;
 
     setTimeout(function() {
       portContents.classList.remove('invisible');
@@ -210,7 +210,7 @@ window.addEventListener('scroll', function() {
     }, 300);
     
   }
-  else if(scrollPos + window.innerHeight < offset2){
+  else if(scrollPos < offset2-200){
     portHead.classList.add('invisible');
     portHead.classList.remove('intro_ani');
     portContents.classList.add('invisible');
@@ -222,18 +222,19 @@ window.addEventListener('scroll', function() {
 // #############################
 // certificate
 
-const cerHead = document.querySelector(".certificate  .head");
-const cerContents = document.querySelector(".certificate .contents");
+var cerHead = document.querySelector(".certificate  .head"),
+offset2; 
+var cerContents = document.querySelector(".certificate .contents");
 
 
-// let targetCertificate = document.getElementById("certificate_move");
-// let targetTopCertificate = targetCertificate.getBoundingClientRect();
-// offset3 = targetTopCertificate.top + scrollPos - window.innerHeight + 200;
-// let offset3 = offset2 + targetPortfolio.offsetHeight;
+let targetCertificate = document.getElementById("certificate_move");
+let targetTopCertificate = targetCertificate.getBoundingClientRect();
+offset3 = targetTopCertificate.top + scrollPos - window.innerHeight + 200;
+// offset3 = 2500;
 
 window.addEventListener('scroll', function() {
   scrollPos = docElem.scrollTop;
-  if (scrollPos + window.innerHeight > offset3) {
+  if (scrollPos > offset3) {
     cerHead.classList.remove('invisible');
     cerHead.classList.add('intro_ani');
 
@@ -242,7 +243,7 @@ window.addEventListener('scroll', function() {
       cerContents.classList.add('intro_ani2');
     }, 300);
   }
-  else if(scrollPos + window.innerHeight < offset3){
+  else if(scrollPos < offset3-200){
     cerHead.classList.add('invisible');
     cerHead.classList.remove('intro_ani');
     cerContents.classList.add('invisible');

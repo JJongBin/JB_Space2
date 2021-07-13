@@ -713,6 +713,7 @@ header .main-menu .menu li a:hover{
 
 .portfolio {
     width: 100%;
+    min-height: 500px;
     /* height: 1330px; */
     padding: 0 10px;
     box-sizing: border-box;
@@ -733,7 +734,7 @@ header .main-menu .menu li a:hover{
     /* grid-template-rows: 300px;    
     grid-template-columns: 1fr;  */
     /* margin-bottom: 100px; */
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .portfolio .contents .item{
@@ -833,7 +834,7 @@ header .main-menu .menu li a:hover{
 /* CERTIFICATE */
 .certificate{
     background-color: rgb(255, 255, 255);
-    height: 1050px;
+    min-height: 500px;
     padding: 0 10px;
     box-sizing: border-box;
 }
@@ -847,10 +848,10 @@ header .main-menu .menu li a:hover{
 }
 .certificate .contents{
     /* display: grid;  */
-    height: 900px;
+    /* height: 900px; */
     /* grid-template-rows: 300px;    
     grid-template-columns: 1fr;  */
-    margin: 20px 0 20px 0;
+    margin: 30px 0 50px 0;
 }
 
 .certificate .contents .item_c{
@@ -858,7 +859,7 @@ header .main-menu .menu li a:hover{
     margin: 10px;
     border: 1px solid #ebebeb;
     box-shadow: 0 0 20px rgb(0 0 0 / 10%);  
-    height: 410px;
+    /* height: 410px; */
     align-items: center;
     box-sizing: border-box;
     border-radius: 5px;

@@ -20,9 +20,14 @@ a{
 .material-icons.md-50 { font-size: 50px; }
 .invisible{
     display: none !important;
+    /* opacity: 0; */
+}
+.invisible2{
+    opacity: 0;
 }
 .intro_ani{
     display: block !important;
+    opacity: 1;
     animation: my-animation1 0.8s ease-in-out;
 }
 .intro_ani2{
@@ -660,6 +665,7 @@ header .main-menu .menu li a:hover{
 
 /* PORTFOLIO */
 .portfolio {
+    min-height: 1000px;
     /* height: 1400px; */
     padding: 0 50px;
     box-sizing: border-box;
@@ -776,12 +782,13 @@ header .main-menu .menu li a:hover{
 
 /* CERTIFICATE */
 .certificate{
+    min-height: 500px;
     background-color: rgb(255, 255, 255);
     padding: 0 50px ;
     box-sizing: border-box;
 }
 .certificate {
-    height: 800px;
+    /* height: 800px; */
 }
 .certificate  .head{
     font-size: 55px;
@@ -795,7 +802,7 @@ header .main-menu .menu li a:hover{
     display: grid; 
     grid-template-rows: 100%;    
     grid-template-columns: 1fr 1fr 1fr; 
-    margin: 30px 0 30px 0;
+    margin: 30px 0 80px 0;
 }
 
 .certificate  .contents .item_c{
@@ -803,7 +810,7 @@ header .main-menu .menu li a:hover{
     margin: 20px;
     border: 1px solid #ebebeb;
     box-shadow: 0 0 20px rgb(0 0 0 / 10%);  
-    height: 430px;
+    /* height: 430px; */
     align-items: center;
     box-sizing: border-box;
 }
