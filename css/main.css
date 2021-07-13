@@ -782,13 +782,10 @@ header .main-menu .menu li a:hover{
 
 /* CERTIFICATE */
 .certificate{
-    min-height: 500px;
+    min-height: 600px;
     background-color: rgb(255, 255, 255);
     padding: 0 50px ;
     box-sizing: border-box;
-}
-.certificate {
-    /* height: 800px; */
 }
 .certificate  .head{
     font-size: 55px;

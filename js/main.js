@@ -72,9 +72,9 @@ docHeight = Math.max(docElem.offsetHeight, docElem.scrollHeight);
 
 scrollPos = docElem.scrollTop ;
 
-// window.addEventListener('scroll', _.throttle(function() {
-//   console.log(scrollPos + window.innerHeight)
-// },1000));
+window.addEventListener('scroll', _.throttle(function() {
+  console.log(scrollPos)
+},1000));
 
 
 
@@ -91,9 +91,6 @@ window.addEventListener('scroll', function() {
     intro.classList.remove('invisible');
 
 
-    goTop.classList.add("intro_ani");
-    goTop.classList.remove('invisible');
-    goTop.classList.remove('none_ani');
     setTimeout(function() {
       introLogo.classList.remove('invisible');
       introLogo.classList.add('intro_ani');
@@ -142,12 +139,9 @@ window.addEventListener('scroll', function() {
     }, 300);
   }
   // if (scrollPos < offset){  // 애니매이션 초기화
+  
   else if(scrollPos + window.innerHeight < offset){
-    goTop.classList.remove('intro_ani');
-    goTop.classList.add('none_ani');
-    setTimeout(function() {
-      goTop.classList.add('invisible');
-    }, 700);
+    
 
     intro.classList.add('invisible');
     intro.classList.remove('intro_ani');
@@ -178,6 +172,17 @@ window.addEventListener('scroll', function() {
       fill_percent.classList.add('invisible');
     };
   };
+  if (scrollPos < 100){
+    goTop.classList.remove('intro_ani');
+    goTop.classList.add('none_ani');
+    setTimeout(function() {
+      goTop.classList.add('invisible');
+    }, 700);
+  } else {
+    goTop.classList.add("intro_ani");
+    goTop.classList.remove('invisible');
+    goTop.classList.remove('none_ani');
+  }
 });
   
 
