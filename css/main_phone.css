@@ -890,6 +890,10 @@ header .main-menu .menu li a:hover{
     align-items: center;
     cursor: pointer;
 }
+.certificate .contents .item_c .img_c img{
+    width: 100%;
+    height: auto;
+}
 
 
 .about{
