@@ -666,9 +666,11 @@ header .main-menu .menu li a:hover{
 /* PORTFOLIO */
 .portfolio {
     min-height: 1000px;
+    max-width: 1500px;
     /* height: 1400px; */
     padding: 0 50px;
     box-sizing: border-box;
+    margin: auto;
     /* border-bottom: 1px solid #ddd; */
 }
 .portfolio  .head{
@@ -783,9 +785,11 @@ header .main-menu .menu li a:hover{
 /* CERTIFICATE */
 .certificate{
     min-height: 600px;
+    max-width: 1500px;
     background-color: rgb(255, 255, 255);
     padding: 0 50px ;
     box-sizing: border-box;
+    margin: auto;
 }
 .certificate  .head{
     font-size: 55px;
