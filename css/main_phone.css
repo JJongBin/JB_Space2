@@ -271,6 +271,7 @@ header .main-menu .menu li a:hover{
     position: relative;
     height: 460px;
     width: 100%;
+    margin-top: 50px;
 }
 .intro::before{
     content: "";
@@ -285,9 +286,14 @@ header .main-menu .menu li a:hover{
 }
 
 .intro .inner{
-    padding: 100px 0 60px 0;
-    margin: 0 auto;
+    /* padding: 100px 0 60px 0; */
+    /* margin: 0 auto; */
     /* opacity: 1; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
 }
 .intro .inner .code{
     height: 300px;

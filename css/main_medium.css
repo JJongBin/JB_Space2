@@ -259,8 +259,9 @@ header .main-menu .menu li a:hover{
     /* background-color: #d5d5d5; */
     /* padding-top: 120px; */
     position: relative;
-    height: 900px;
-    width: 100%;
+    height: 800px;
+    /* width: 100%; */
+    margin-top: 100px;
 }
 .intro::before{
     content: "";
@@ -275,12 +276,15 @@ header .main-menu .menu li a:hover{
 }
 
 .intro .inner{
-    padding: 200px 0;
-    /* opacity: 1; */
+    position: absolute;
+    /* padding: 200px 0; */
+    top: 50%;
+    left: 50%;
+    margin-left: -360px;
+    margin-top: -250px;
 }
 .intro .inner .code{
     height: 500px;
-    /* background-color: #888888; */
     background-color: rgb(38, 38, 38);
     position: relative;
     box-shadow: 0 0 20px rgb(0 0 0 / 20%);
