@@ -713,6 +713,7 @@ header .main-menu .menu li a:hover{
     /* width: 460px; */
     position: relative;
     box-sizing: border-box;
+    background-color: rgba(240, 240, 240, 0.5);
 }
 .portfolio .contents .item .img_target{
     margin: 5px 0;
@@ -824,6 +825,7 @@ header .main-menu .menu li a:hover{
     align-items: center;
     box-sizing: border-box;
     border-radius: 5px;
+    background-color: rgba(240, 240, 240, 0.5);
 }
 .certificate .contents .item_c h4{
     font-size: 20px;
