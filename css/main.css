@@ -4,6 +4,7 @@ body{
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
+    background-color: rgb(230, 230, 230);
 }
 a{
     text-decoration: none;
@@ -751,11 +752,21 @@ header .main-menu .menu li a:hover{
     width: 100%;
     height: auto;
     /* max-height: 400px; */
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    user-select:none;
 }
 .portfolio  .contents .item .img_mg .prev{
     margin: auto;
     color: #b1b1b1;
     cursor: pointer;
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    user-select:none;
 }
 .portfolio  .contents .item .img_mg .prev:hover{
     color: #000;
@@ -764,6 +775,11 @@ header .main-menu .menu li a:hover{
     margin: auto;
     color: #b1b1b1;
     cursor: pointer;
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    user-select:none;
 }
 .portfolio  .contents .item .img_mg .next:hover{
     color: #000;
